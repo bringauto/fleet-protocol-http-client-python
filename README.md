@@ -18,7 +18,7 @@ To use the client, get the code from the repository or install it according to t
 ## Installation
 To install the client, run
 ```bash
-pip install git+https://github.com/bringauto/fleet-http-api-client.git
+pip install git+https://github.com/bringauto/fleet-http-client-python.git
 ```
 
 ## Client re-generation
