@@ -22,4 +22,3 @@ Then you can run the `regen.sh` script (from the root folder).
 # Requirements
 Python 3.10.12+
 
-# Testing
