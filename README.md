@@ -9,6 +9,9 @@ The auto-generated code can be found in the `fleet_http_client_python` folder.
 The code is generated using the `openapi-generator-cli` tool. The code is generated using the `openapi.yaml` file.
 DO NOT edit the auto-generated code manually.
 
+## Documentation
+The auto-generated documentation for the client models and API is in the `fleet_http_client_python/docs` folder.
+
 # Installation
 To install the client, run
 ```bash
