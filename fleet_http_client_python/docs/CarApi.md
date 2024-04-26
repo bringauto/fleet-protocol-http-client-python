@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **available_cars**
-> List[Car] available_cars(wait=wait)
+> List[Car] available_cars(wait=wait, since=since)
 
 
 
@@ -49,9 +49,10 @@ with fleet_http_client_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = fleet_http_client_python.CarApi(api_client)
     wait = False # bool | An empty parameter. If specified, the method waits for predefined period of time, until some data to be sent in response are available. (optional) (default to False)
+    since = 0 # int | A Unix timestamp; if specified, the method returns all messages inclusivelly newer than the specified timestamp \\ (i.e., messages with timestamp greater than or equal to the 'since' timestamp) (optional) (default to 0)
 
     try:
-        api_response = api_instance.available_cars(wait=wait)
+        api_response = api_instance.available_cars(wait=wait, since=since)
         print("The response of CarApi->available_cars:\n")
         pprint(api_response)
     except Exception as e:
@@ -66,6 +67,7 @@ with fleet_http_client_python.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **wait** | **bool**| An empty parameter. If specified, the method waits for predefined period of time, until some data to be sent in response are available. | [optional] [default to False]
+ **since** | **int**| A Unix timestamp; if specified, the method returns all messages inclusivelly newer than the specified timestamp \\ (i.e., messages with timestamp greater than or equal to the &#39;since&#39; timestamp) | [optional] [default to 0]
 
 ### Return type
 
