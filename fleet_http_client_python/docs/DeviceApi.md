@@ -316,7 +316,7 @@ with fleet_http_client_python.ApiClient(configuration) as api_client:
     api_instance = fleet_http_client_python.DeviceApi(api_client)
     company_name = 'test_company' # str | Name of the company, following a pattern ^[0-9a-z_]+$.
     car_name = 'test_car' # str | Name of the Car, following a pattern ^[0-9a-z_]+$.
-    message = [{"device_id":{"module_id":47,"type":2,"role":"test_device","name":"Test Device"},"payload":{"message_type":"STATUS","encoding":"BASE64","data":"QnJpbmdBdXRv"}}] # List[Message] | Statuses to be send by the device. (optional)
+    message = [{"device_id":{"module_id":47,"type":0,"role":"test_device","name":"Test Device"},"payload":{"message_type":"STATUS","encoding":"BASE64","data":"QnJpbmdBdXRv"}}] # List[Message] | Statuses to be send by the device. (optional)
 
     try:
         api_instance.send_statuses(company_name, car_name, message=message)
