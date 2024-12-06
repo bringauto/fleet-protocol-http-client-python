@@ -1,1 +1,4 @@
 .venv
+.mypy_cache
+*.pyc
+.vscode
